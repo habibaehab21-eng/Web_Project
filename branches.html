@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches - Savora Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">Savora</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="branches.html" class="active">Branches</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="index.html#about-snippet">About</a></li>
+            <li><a href="index.html#contact-footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Branches</h1>
+            <p>Find the nearest Savora branch and visit us today</p>
+        </div>
+    </section>
+
+    <!-- ===== BRANCHES CARDS ===== -->
+    <section class="branches-section">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="branches-grid">
+            
+            <!-- Branch 1 -->
+            <div class="branch-card">
+                <div class="branch-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&h=300&fit=crop" alt="Downtown Branch">
+                    <div class="branch-badge">Main Branch</div>
+                </div>
+                <div class="branch-info">
+                    <h3>Downtown Cairo</h3>
+                    <div class="branch-details">
+                        <p><i class="fa-solid fa-location-dot"></i> 123 Tahrir St, Downtown</p>
+                        <a href="tel:+201011166459" class="branch-link">
+                        <i class="fa-solid fa-phone"></i> +20 101 116 6459
+                        </a>
+                        <p class="hours-toggle" onclick="toggleHours(this)">
+                            <i class="fa-regular fa-clock"></i> Opening Hours <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                        <div class="hours-details">
+                            <div class="hours-row">
+                                <span>Sun - Thu:</span>
+                                <span>10:00 AM - 12:00 AM</span>
+                            </div>
+                            <div class="hours-row weekend">
+                                <span>Fri - Sat:</span>
+                                <span>11:00 AM - 1:00 AM</span>
+                                <span class="weekend-note">(Extended Hours)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Downtown+Cairo" target="_blank" class="btn btn-primary direction-btn">
+                        <i class="fa-solid fa-location-crosshairs"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Branch 2 -->
+            <div class="branch-card">
+                <div class="branch-image">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&h=300&fit=crop" alt="Heliopolis Branch">
+                </div>
+                <div class="branch-info">
+                    <h3>Heliopolis</h3>
+                    <div class="branch-details">
+                        <p><i class="fa-solid fa-location-dot"></i> 456 El-Merghany St, Heliopolis</p>
+                         <a href="tel:+201011166459" class="branch-link">
+                        <i class="fa-solid fa-phone"></i> +20 101 116 6459
+                        </a>
+                        <p class="hours-toggle" onclick="toggleHours(this)">
+                            <i class="fa-regular fa-clock"></i> Opening Hours <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                        <div class="hours-details">
+                            <div class="hours-row">
+                                <span>Sun - Thu:</span>
+                                <span>11:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="hours-row weekend">
+                                <span>Fri - Sat:</span>
+                                <span>12:00 PM - 12:00 AM</span>
+                                <span class="weekend-note">(Extended Hours)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Heliopolis+Cairo" target="_blank" class="btn btn-primary direction-btn">
+                        <i class="fa-solid fa-location-crosshairs"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Branch 3 -->
+            <div class="branch-card">
+                <div class="branch-image">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=500&h=300&fit=crop" alt="New Cairo Branch">
+                </div>
+                <div class="branch-info">
+                    <h3>New Cairo</h3>
+                    <div class="branch-details">
+                        <p><i class="fa-solid fa-location-dot"></i> 789 90th St, 5th Settlement</p>
+                        <a href="tel:+201011166459" class="branch-link">
+                        <i class="fa-solid fa-phone"></i> +20 101 116 6459
+                        </a>
+                        <p class="hours-toggle" onclick="toggleHours(this)">
+                            <i class="fa-regular fa-clock"></i> Opening Hours <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                        <div class="hours-details">
+                            <div class="hours-row">
+                                <span>Sun - Thu:</span>
+                                <span>12:00 PM - 11:00 PM</span>
+                            </div>
+                            <div class="hours-row weekend">
+                                <span>Fri - Sat:</span>
+                                <span>1:00 PM - 12:00 AM</span>
+                                <span class="weekend-note">(Extended Hours)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=New+Cairo+5th+Settlement" target="_blank" class="btn btn-primary direction-btn">
+                        <i class="fa-solid fa-location-crosshairs"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Savora</h3>
+                <p>Where every bite tells a story.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="https://maps.google.com/?q=123+Food+Street+Cairo" target="_blank" class="contact-link">
+                    <i class="fa-solid fa-location-dot"></i> 123 Food Street, Cairo
+                </a>
+                <a href="tel:+201234567890" class="contact-link">
+                    <i class="fa-solid fa-phone"></i> +20 123 456 7890
+                </a>
+                <a href="mailto:hello@savora.com" class="contact-link">
+                    <i class="fa-solid fa-envelope"></i> hello@savora.com
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savora Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

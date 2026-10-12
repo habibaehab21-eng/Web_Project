@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">Savora</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="index.html#about-snippet">About</a></li>
+            <li><a href="index.html#contact-footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Welcome to</p>
+            <h1 class="hero-title">Savora</h1>
+            <p class="hero-desc">Where every bite tells a story. Fresh ingredients, bold flavors, and an unforgettable dining experience.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                <a href="reservations.html" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK NAVIGATION CARDS ===== -->
+    <section class="quick-nav">
+        <h2 class="section-title">What Are You Looking For?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🍽️</div>
+                <h3>Our Menu</h3>
+                <p>Discover our carefully crafted dishes made with the freshest ingredients.</p>
+                <a href="menu.html" class="card-link">View Menu →</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">📍</div>
+                <h3>Our Branches</h3>
+                <p>Find the nearest Savora branch to you and visit us today.</p>
+                <a href="branches.html" class="card-link">Find Branch →</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Reservations</h3>
+                <p>Book your table in advance and enjoy a seamless dining experience.</p>
+                <a href="reservations.html" class="card-link">Book Now →</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛵</div>
+                <h3>Order Online</h3>
+                <p>Get your favorite Savora dishes delivered right to your doorstep.</p>
+                <a href="order.html" class="card-link">Order Now →</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- ===== FEATURED DISHES (FLIP CARDS) ===== -->
+<section class="featured">
+    <h2 class="section-title">Chef's Favorites</h2>
+    <div class="dishes-container">
+        
+        <!-- Dish 1 -->
+        <div class="dish-card">
+            <div class="dish-card-inner">
+                <div class="dish-card-front">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=400&fit=crop" alt="Grilled Salmon">
+                    <div class="dish-name-overlay">
+                        <h3>Grilled Salmon</h3>
+                    </div>
+                </div>
+                <div class="dish-card-back">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon grilled to perfection, served with a zesty lemon butter sauce and seasonal vegetables. A true taste of the ocean.</p>
+                    <a href="menu.html" class="order-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="dish-card">
+            <div class="dish-card-inner">
+                <div class="dish-card-front">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Truffle Pizza">
+                    <div class="dish-name-overlay">
+                        <h3>Truffle Pizza</h3>
+                    </div>
+                </div>
+                <div class="dish-card-back">
+                    <h3>Truffle Pizza</h3>
+                    <p>Wood-fired artisan pizza topped with fresh mozzarella, wild mushrooms, and a drizzle of premium truffle oil. Pure Italian elegance.</p>
+                    <a href="menu.html" class="order-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="dish-card">
+            <div class="dish-card-inner">
+                <div class="dish-card-front">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop" alt="Tiramisu">
+                    <div class="dish-name-overlay">
+                        <h3>Classic Tiramisu</h3>
+                    </div>
+                </div>
+                <div class="dish-card-back">
+                    <h3>Classic Tiramisu</h3>
+                    <p>Our signature Italian dessert made with layers of coffee-soaked ladyfingers and rich mascarpone cream, dusted with cocoa powder.</p>
+                    <a href="menu.html" class="order-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- ===== ABOUT SNIPPET ===== -->
+    <section class="about-snippet" id="about-snippet">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="Restaurant Interior">
+        </div>
+        <div class="about-text">
+            <h2 class="section-title">Our Story</h2>
+            <p>Founded in 2020, Savora was born from a passion for bringing people together over extraordinary food. Every dish on our menu is crafted with love, using locally sourced ingredients and time-honored recipes with a modern twist.</p>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="quote">"The best dining experience I've ever had. The truffle pizza is absolutely divine!"</p>
+                <p class="author">— Sarah M.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Amazing atmosphere, incredible food, and the staff is so friendly. Will definitely come back!"</p>
+                <p class="author">— Ahmed K.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"The tiramisu alone is worth the visit. Savora has become our family's favorite spot."</p>
+                <p class="author">— Nour H.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact-footer">
+    <div class="footer-content">
+        
+        <!-- العمود الأول: البراند والسوشيال -->
+        <div class="footer-brand">
+            <h3>Savora</h3>
+            <p>Where every bite tells a story.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- العمود الثاني: الروابط السريعة -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </div>
+
+        <!-- العمود الثالث: التواصل -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <a href="https://maps.google.com/?q=123+Food+Street+Cairo" target="_blank" class="contact-link">
+                <i class="fa-solid fa-location-dot"></i> 123 Food Street, Cairo
+            </a>
+            <a href="tel:+201234567890" class="contact-link">
+                <i class="fa-solid fa-phone"></i> +20 123 456 7890
+            </a>
+            <a href="mailto:hello@savora.com" class="contact-link">
+                <i class="fa-solid fa-envelope"></i> hello@savora.com
+            </a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Savora Restaurant. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

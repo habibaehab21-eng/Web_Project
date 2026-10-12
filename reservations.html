@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Savora Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Savora</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="index.html#about-snippet">About</a></li>
+            <li><a href="index.html#contact-footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Book a Table</h1>
+            <p>Reserve your spot for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <section class="reservation-section">
+        <div class="reservation-container">
+            
+            <div class="reservation-form-wrapper">
+                <h2 class="form-title">Reservation Details</h2>
+                <form class="reservation-form" id="reservationForm">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-user"></i> Full Name</label>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-location-dot"></i> Select Branch</label>
+                            <select id="branchSelect" required>
+                                <option value="">Choose a branch</option>
+                                <option value="downtown">Downtown Cairo</option>
+                                <option value="heliopolis">Heliopolis</option>
+                                <option value="newcairo">New Cairo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fa-regular fa-calendar"></i> Date</label>
+                            <input type="date" id="reservationDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-regular fa-clock"></i> Time</label>
+                            <select id="reservationTime" required>
+                                <option value="">Select time</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-users"></i> Number of Guests</label>
+                            <select id="guestCount" required>
+                                <option value="">Select guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-money-bill-wave"></i> Deposit (500 EGP per person)</label>
+                            <input type="text" id="depositAmount" placeholder="0 EGP" readonly>
+                            <span class="deposit-note">* Deposit is calculated automatically</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label><i class="fa-solid fa-credit-card"></i> Payment Method</label>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="visa" id="radioVisa" required>
+                                <div class="payment-card">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <span>Visa / Credit Card</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="fawry" id="radioFawry">
+                                <div class="payment-card">
+                                    <i class="fa-solid fa-store"></i>
+                                    <span>Fawry</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Visa Form -->
+                        <div id="visaForm" style="display: none; margin-top: 20px; padding: 20px; background: #f9f9f9; border-radius: 10px; border: 1px solid #ddd;">
+                            <h4 style="margin-bottom: 15px; color: #1B1B1B;"><i class="fa-solid fa-lock" style="color: #C8956C;"></i> Card Details</h4>
+                            <div class="form-group full-width">
+                                <label>Card Number</label>
+                                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Cardholder Name</label>
+                                    <input type="text" placeholder="Name on card">
+                                </div>
+                                <div class="form-group">
+                                    <label>Expiry Date</label>
+                                    <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="password" placeholder="123" maxlength="4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fawry Details -->
+                        <div id="fawryForm" style="display: none; margin-top: 20px; padding: 20px; background: #f9f9f9; border-radius: 10px; border: 1px solid #ddd; text-align: center;">
+                            <h4 style="margin-bottom: 15px; color: #1B1B1B;"><i class="fa-solid fa-store" style="color: #C8956C;"></i> Fawry Payment</h4>
+                            <p style="color: #666; margin-bottom: 10px;">You will receive a Fawry Reference Number after confirmation.</p>
+                            <div style="background: #fff; padding: 15px; border: 2px dashed #C8956C; border-radius: 8px; display: inline-block;">
+                                <span style="color: #666;">Reference:</span>
+                                <strong id="fawryRef" style="color: #C8956C; font-size: 1.2rem; letter-spacing: 2px; margin-left: 10px;">FW-XXXX-XXXX</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label><i class="fa-solid fa-comment-dots"></i> Special Requests</label>
+                        <textarea placeholder="Any special requests? (Birthday, anniversary, etc.)" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fa-solid fa-check"></i> Confirm Reservation
+                    </button>
+                </form>
+            </div>
+
+            <div class="reservation-summary">
+                <h3>Booking Summary</h3>
+                <div class="summary-details">
+                    <div class="summary-row"><span>Branch:</span><span id="summaryBranch">-</span></div>
+                    <div class="summary-row"><span>Date:</span><span id="summaryDate">-</span></div>
+                    <div class="summary-row"><span>Time:</span><span id="summaryTime">-</span></div>
+                    <div class="summary-row"><span>Guests:</span><span id="summaryGuests">-</span></div>
+                    <div class="summary-row total"><span>Deposit Amount:</span><span id="summaryDeposit">0 EGP</span></div>
+                </div>
+                <div class="deposit-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Deposit is 500 EGP per person. The remaining amount will be paid at the restaurant.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Savora</h3>
+                <p>Where every bite tells a story.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="https://maps.google.com/?q=123+Food+Street+Cairo" target="_blank" class="contact-link"><i class="fa-solid fa-location-dot"></i> 123 Food Street, Cairo</a>
+                <a href="tel:+201234567890" class="contact-link"><i class="fa-solid fa-phone"></i> +20 123 456 7890</a>
+                <a href="mailto:hello@savora.com" class="contact-link"><i class="fa-solid fa-envelope"></i> hello@savora.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savora Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

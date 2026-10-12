@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Savora Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">Savora</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="index.html#about-snippet">About</a></li>
+            <li><a href="index.html#contact-footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Menu</h1>
+            <p>Discover our carefully crafted dishes made with the freshest ingredients</p>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH & FILTERS ===== -->
+    <section class="menu-controls">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a dish..." class="search-input">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+            <button class="filter-btn" data-filter="main">Main Courses</button>
+            <button class="filter-btn" data-filter="italian">Italian Corner</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+    </section>
+
+        <section class="menu-items">
+        <div class="menu-grid">
+
+            <!-- ================= APPETIZERS (12 Items) ================= -->
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop" alt="Soup">
+                        <div class="dish-name-box"><h3>Cream of Mushroom Soup</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Cream of Mushroom Soup</h3>
+                        <p>Rich and creamy soup made with fresh wild mushrooms and thyme.</p>
+                        <span class="price">180 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1746211108786-ca20c8f80ecd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Caesar Salad">
+                        <div class="dish-name-box"><h3>Classic Caesar Salad</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Classic Caesar Salad</h3>
+                        <p>Crisp romaine lettuce, parmesan, croutons, and Caesar dressing.</p>
+                        <span class="price">220 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop" alt="Greek Salad">
+                        <div class="dish-name-box"><h3>Greek Salad</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Greek Salad</h3>
+                        <p>Fresh cucumbers, tomatoes, olives, and feta cheese with olive oil.</p>
+                        <span class="price">200 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Garden Salad">
+                        <div class="dish-name-box"><h3>Fresh Garden Salad</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fresh Garden Salad</h3>
+                        <p>Mixed greens, cherry tomatoes, carrots, and light vinaigrette.</p>
+                        <span class="price">160 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1771154136172-0633db70b7dc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Hummus">
+                        <div class="dish-name-box"><h3>Spicy Salmon bits</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Hummus & Pita</h3>
+                        <p>Bread bits toped with Creamy spicy salmon served with siratcha honey sauce, freshly baked pita bread.</p>
+                        <span class="price">150 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop" alt="Guacamole">
+                        <div class="dish-name-box"><h3>Guacamole & Chips</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Guacamole & Chips</h3>
+                        <p>Fresh avocado dip with lime and cilantro, served with tortilla chips.</p>
+                        <span class="price">190 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop" alt="Bruschetta">
+                        <div class="dish-name-box"><h3>Tomato Bruschetta</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Tomato Bruschetta</h3>
+                        <p>Toasted bread topped with fresh tomatoes, garlic, and basil.</p>
+                        <span class="price">170 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop" alt="Calamari">
+                        <div class="dish-name-box"><h3>Fried Calamari</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fried Calamari</h3>
+                        <p>Crispy fried squid rings served with tartar sauce and lemon.</p>
+                        <span class="price">240 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1679310290259-78d9eaa32700?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Spring Rolls">
+                        <div class="dish-name-box"><h3>Chicken Spring Rolls</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Chicken Spring Rolls</h3>
+                        <p>Crunchy rolls filled with spiced chicken and vegetables.</p>
+                        <span class="price">210 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1683694062041-cc62c5390b13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Mozzarella">
+                        <div class="dish-name-box"><h3>Mozzarella Sticks</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Mozzarella Sticks</h3>
+                        <p>Golden fried cheese sticks served with marinara sauce.</p>
+                        <span class="price">200 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1648580852350-3098af89f110?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3Df?w=400&h=300&fit=crop" alt="Wings">
+                        <div class="dish-name-box"><h3>Spicy Chicken Wings</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Spicy Chicken Wings</h3>
+                        <p>8 pieces of wings tossed in our signature hot sauce.</p>
+                        <span class="price">230 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="appetizers">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=400&h=300&fit=crop" alt="Shrimp">
+                        <div class="dish-name-box"><h3>Shrimp Cocktail</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Shrimp Cocktail</h3>
+                        <p>Chilled jumbo shrimp served with zesty cocktail sauce.</p>
+                        <span class="price">280 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= MAIN COURSES (12 Items) ================= -->
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400&h=300&fit=crop" alt="Grilled Chicken">
+                        <div class="dish-name-box"><h3>Grilled Chicken Breast</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Grilled Chicken Breast</h3>
+                        <p>Juicy chicken breast marinated in herbs and grilled.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">350 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1595507238835-bff863eb6edb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="BBQ Ribs">
+                        <div class="dish-name-box"><h3>BBQ Beef Ribs</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>BBQ Beef Ribs</h3>
+                        <p>Tender beef ribs slow-cooked with smoky BBQ sauce.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">450 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Steak">
+                        <div class="dish-name-box"><h3>Ribeye Steak</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Ribeye Steak</h3>
+                        <p>Premium cut ribeye steak, grilled to your liking.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">650 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1734987052573-0fbe611842ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Lamb">
+                        <div class="dish-name-box"><h3>Herb Lamb Chops</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Herb Lamb Chops</h3>
+                        <p>Tender lamb chops marinated in rosemary and garlic.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">700 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop" alt="Salmon">
+                        <div class="dish-name-box"><h3>Grilled Salmon Fillet</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Grilled Salmon Fillet</h3>
+                        <p>Fresh Atlantic salmon with lemon butter sauce.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">550 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=400&h=300&fit=crop" alt="Seafood">
+                        <div class="dish-name-box"><h3>Seafood Platter</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Seafood Platter</h3>
+                        <p>A mix of grilled shrimp, calamari, and fish fillet.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">750 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Beef Burger">
+                        <div class="dish-name-box"><h3>Classic Beef Burger</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Classic Beef Burger</h3>
+                        <p>Angus beef patty with cheddar, lettuce, and special sauce.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">320 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Chicken Burger">
+                        <div class="dish-name-box"><h3>Crispy Chicken Burger</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Crispy Chicken Burger</h3>
+                        <p>Crunchy chicken fillet with coleslaw and mayo.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">290 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" alt="Duck">
+                        <div class="dish-name-box"><h3>Roasted Duck Breast</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Roasted Duck Breast</h3>
+                        <p>Pan-seared duck breast with orange glaze.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">600 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Veal">
+                        <div class="dish-name-box"><h3>Veal Steak</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Veal Steak</h3>
+                        <p>Tender veal steak cooked with mushrooms and cream.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">680 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Mixed Grill">
+                        <div class="dish-name-box"><h3>Mixed Grill Platter</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Mixed Grill Platter</h3>
+                        <p>A combination of steak, chicken, and kofta.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">800 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="main">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=400&h=300&fit=crop" alt="Turkey">
+                        <div class="dish-name-box"><h3>Herb Roasted Turkey</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Herb Roasted Turkey</h3>
+                        <p>Sliced turkey breast with cranberry sauce.</p>
+                        <div class="sides-box"><strong>Choose 2 Sides:</strong><br>Fries • Sautéed Veggies • Rice • Pasta</div>
+                        <span class="price">400 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= ITALIAN CORNER ================= -->
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop" alt="Margherita">
+                        <div class="dish-name-box"><h3>Margherita Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic wood-fired pizza with mozzarella and basil.</p>
+                        <span class="price">280 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop" alt="Pepperoni">
+                        <div class="dish-name-box"><h3>Pepperoni Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Loaded with spicy pepperoni and melted mozzarella.</p>
+                        <span class="price">320 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="BBQ Chicken">
+                        <div class="dish-name-box"><h3>BBQ Chicken Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p>Grilled chicken, red onions, and BBQ sauce base.</p>
+                        <span class="price">340 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Veggie">
+                        <div class="dish-name-box"><h3>Veggie Supreme Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Veggie Supreme Pizza</h3>
+                        <p>Bell peppers, mushrooms, olives, and onions.</p>
+                        <span class="price">300 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1669490883041-2d0ac48bc4c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="4 Cheese">
+                        <div class="dish-name-box"><h3>Four Cheese Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Four Cheese Pizza</h3>
+                        <p>Mozzarella, parmesan, gorgonzola, and ricotta.</p>
+                        <span class="price">330 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop" alt="Meat Lovers">
+                        <div class="dish-name-box"><h3>Meat Lovers Pizza</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Meat Lovers Pizza</h3>
+                        <p>Pepperoni, sausage, bacon, and ground beef.</p>
+                        <span class="price">360 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Carbonara">
+                        <div class="dish-name-box"><h3>Creamy Carbonara</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Creamy Carbonara</h3>
+                        <p>Spaghetti with eggs, parmesan, pancetta, and pepper.</p>
+                        <span class="price">290 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1626844131082-256783844137?w=400&h=300&fit=crop" alt="Bolognese">
+                        <div class="dish-name-box"><h3>Classic Bolognese</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Classic Bolognese</h3>
+                        <p>Tagliatelle pasta with rich slow-cooked meat sauce.</p>
+                        <span class="price">280 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=400&h=300&fit=crop" alt="Alfredo">
+                        <div class="dish-name-box"><h3>Chicken Alfredo</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Chicken Alfredo</h3>
+                        <p>Fettuccine pasta with creamy white sauce and chicken.</p>
+                        <span class="price">310 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="italian">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop" alt="Pesto">
+                        <div class="dish-name-box"><h3>Pesto Genovese</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Pesto Genovese</h3>
+                        <p>Spaghetti with fresh basil pesto and pine nuts.</p>
+                        <span class="price">270 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DRINKS ================= -->
+            <!-- Cold Drinks -->
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1623593688280-a5aec8ac4ae7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Mojito">
+                        <div class="dish-name-box"><h3>Fresh Mojito</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fresh Mojito</h3>
+                        <p>Mint, lime, sugar, and sparkling water.</p>
+                        <span class="price">120 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&h=300&fit=crop" alt="Lemonade">
+                        <div class="dish-name-box"><h3>Fresh Lemonade</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fresh Lemonade</h3>
+                        <p>Classic lemon juice with mint and ice.</p>
+                        <span class="price">90 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop" alt="Orange Juice">
+                        <div class="dish-name-box"><h3>Fresh Orange Juice</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fresh Orange Juice</h3>
+                        <p>100% freshly squeezed orange juice.</p>
+                        <span class="price">90 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=300&fit=crop" alt="Mango">
+                        <div class="dish-name-box"><h3>Mango Juice</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Mango Juice</h3>
+                        <p>Rich and sweet Egyptian mango juice.</p>
+                        <span class="price">100 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1600718374662-0483d2b9da44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=400&fit=crop" alt="Smoothie">
+                        <div class="dish-name-box"><h3>Berry Smoothie</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Berry Smoothie</h3>
+                        <p>Mixed berries blended with yogurt and honey.</p>
+                        <span class="price">140 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1720118301117-8a0a9e2e53cb?w=400&h=300&fit=crop" alt="Iced Tea">
+                        <div class="dish-name-box"><h3>Iced Peach Tea</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Iced Peach Tea</h3>
+                        <p>Cold brewed tea with peach flavor and ice.</p>
+                        <span class="price">110 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hot Drinks -->
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=400&h=300&fit=crop" alt="Green Tea">
+                        <div class="dish-name-box"><h3>Green Tea</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Green Tea</h3>
+                        <p>Premium green tea leaves with jasmine.</p>
+                        <span class="price">70 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=400&h=300&fit=crop" alt="Chamomile">
+                        <div class="dish-name-box"><h3>Chamomile Tea</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Chamomile Tea</h3>
+                        <p>Soothing chamomile flowers with honey.</p>
+                        <span class="price">70 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&h=300&fit=crop" alt="Earl Grey">
+                        <div class="dish-name-box"><h3>Earl Grey Tea</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Earl Grey Tea</h3>
+                        <p>Black tea infused with bergamot oil.</p>
+                        <span class="price">75 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1637572815755-c4b80092dce1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Hot Chocolate">
+                        <div class="dish-name-box"><h3>Hot Chocolate</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Hot Chocolate</h3>
+                        <p>Rich Belgian chocolate with steamed milk.</p>
+                        <span class="price">130 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee -->
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&h=300&fit=crop" alt="Espresso">
+                        <div class="dish-name-box"><h3>Espresso</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Espresso</h3>
+                        <p>Strong and bold single shot of coffee.</p>
+                        <span class="price">80 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1581996323441-538096e854b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Americano">
+                        <div class="dish-name-box"><h3>Americano</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Iced Americano</h3>
+                        <p>Espresso diluted with water and ice .</p>
+                        <span class="price">90 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" alt="Cappuccino">
+                        <div class="dish-name-box"><h3>Cappuccino</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with steamed milk and foam.</p>
+                        <span class="price">110 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Latte">
+                        <div class="dish-name-box"><h3>Caramel Latte</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Caramel Latte</h3>
+                        <p>Espresso, steamed milk, and caramel syrup.</p>
+                        <span class="price">120 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="drinks">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1594491777086-2ab2f28db7a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Macchiato">
+                        <div class="dish-name-box"><h3>Hazelnut Macchiato</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Hazelnut Macchiato</h3>
+                        <p>Espresso marked with foam and hazelnut.</p>
+                        <span class="price">125 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DESSERTS ================= -->
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1605621234603-421e591840cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Tiramisu">
+                        <div class="dish-name-box"><h3>Classic Tiramisu</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Classic Tiramisu</h3>
+                        <p>Coffee-soaked ladyfingers and mascarpone cream.</p>
+                        <span class="price">180 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1779282159217-226d9e831c03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Cheesecake">
+                        <div class="dish-name-box"><h3>Berries Cheesecake</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Berries Cheesecake</h3>
+                        <p>Creamy cheesecake with berry topping.</p>
+                        <span class="price">200 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Lava Cake">
+                        <div class="dish-name-box"><h3>Chocolate Lava Cake</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm cake with a molten chocolate center.</p>
+                        <span class="price">220 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop" alt="Brownie">
+                        <div class="dish-name-box"><h3>Fudge Brownie</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Fudge Brownie</h3>
+                        <p>Dense chocolate brownie with walnuts.</p>
+                        <span class="price">190 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Ice Cream">
+                        <div class="dish-name-box"><h3>Ice Cream Sundae</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Ice Cream Sundae</h3>
+                        <p>3 scoops with chocolate sauce and nuts.</p>
+                        <span class="price">170 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1676300184943-09b2a08319a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Creme Brulee">
+                        <div class="dish-name-box"><h3>Crème Brûlée</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Crème Brûlée</h3>
+                        <p>Rich custard base with a caramelized sugar top.</p>
+                        <span class="price">210 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=400&h=300&fit=crop" alt="Apple Pie">
+                        <div class="dish-name-box"><h3>Warm Apple Pie</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Warm Apple Pie</h3>
+                        <p>Served with a scoop of vanilla ice cream.</p>
+                        <span class="price">180 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-category="desserts">
+                <div class="dish-card-inner">
+                    <div class="dish-card-front">
+                        <img src="https://images.unsplash.com/photo-1590429878071-1fabde685deb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=400&h=300&fit=crop" alt="Kunafa">
+                        <div class="dish-name-box"><h3>Cheese Kunafa</h3></div>
+                    </div>
+                    <div class="dish-card-back">
+                        <h3>Cheese Kunafa</h3>
+                        <p>Crispy pastry with melted cheese and syrup.</p>
+                        <span class="price">230 EGP</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Savora</h3>
+                <p>Where every bite tells a story.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="https://maps.google.com/?q=123+Food+Street+Cairo" target="_blank" class="contact-link"><i class="fa-solid fa-location-dot"></i> 123 Food Street, Cairo</a>
+                <a href="tel:+201234567890" class="contact-link"><i class="fa-solid fa-phone"></i> +20 123 456 7890</a>
+                <a href="mailto:hello@savora.com" class="contact-link"><i class="fa-solid fa-envelope"></i> hello@savora.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savora Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
